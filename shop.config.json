@@ -44,8 +44,8 @@
   "hero": {
     "image": "hero/hero-1-red-saree.webp",
     "offer": "Festive Sale: up to 40% off",
-    "autoplayInterval": 500,
-    "autoplayDelay": 500,
+    "autoplayInterval": 1000,
+    "autoplayDelay": 1000,
     "transitionDuration": 400,
     "slides": [
       {
