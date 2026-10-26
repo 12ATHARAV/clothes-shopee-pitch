@@ -15,5 +15,8 @@
   "type": "module",
   "devDependencies": {
     "vite": "^8.3.5"
+  },
+  "dependencies": {
+    "@vercel/speed-insights": "^2.0.0"
   }
 }
