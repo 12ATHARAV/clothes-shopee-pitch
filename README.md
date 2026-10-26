@@ -1,1 +1,1 @@
-## Focused on Mobile friendly interface
+## works on desktop/smartphone/tablet interface
