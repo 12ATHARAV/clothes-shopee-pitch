@@ -42,7 +42,7 @@ function render() {
         <div class="pd-gallery__scroll-track" id="pd-gallery-track">
           ${product.images.map((im, i) => `
             <div class="pd-gallery__slide" data-slide="${i}">
-              <img src="${imgUrl(im)}" alt="${product.alt ? product.alt + ' — view ' + (i + 1) : product.name + ' — view ' + (i + 1)}" width="900" height="1125" loading="${i === 0 ? 'eager' : 'lazy'}" decoding="async">
+              <img src="${imgUrl(im)}" alt="${product.alt ? product.alt + ' — view ' + (i + 1) : product.name + ' — view ' + (i + 1)}" width="900" height="1125" loading="eager" decoding="async">
               <span class="pd-gallery__hint" data-i18n="pd.zoom">${t('pd.zoom')}</span>
             </div>
           `).join('')}
@@ -51,7 +51,7 @@ function render() {
         <div class="pd-gallery__thumbs" role="group" aria-label="Photos">
           ${product.images.map((im, i) => `
           <button type="button" aria-current="${i === 0}" data-thumb="${i}" aria-label="Photo ${i + 1}">
-            <img src="${imgUrl(im)}" alt="" width="160" height="200" loading="lazy" decoding="async">
+            <img src="${imgUrl(im)}" alt="" width="160" height="200" loading="eager" decoding="async">
           </button>`).join('')}
         </div>` : ''}
       </div>
@@ -142,11 +142,38 @@ function wire() {
   const slides = document.querySelectorAll('.pd-gallery__slide');
 
   document.querySelectorAll('[data-thumb]').forEach((b) => {
-    b.addEventListener('click', () => {
+    b.addEventListener('click', (e) => {
+      e.preventDefault();
       const i = Number(b.dataset.thumb);
+      if (isNaN(i)) return;
       sel.img = i;
-      slides[i]?.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
-      document.querySelectorAll('[data-thumb]').forEach((x) => x.setAttribute('aria-current', String(Number(x.dataset.thumb) === i)));
+
+      // Reset any active zoom on slides
+      slides.forEach((s) => {
+        s.dataset.zoom = 'false';
+      });
+
+      if (track) {
+        const targetSlide = slides[i];
+        const targetLeft = targetSlide ? targetSlide.offsetLeft : (i * track.clientWidth);
+
+        // Temporarily disable scroll-snap during programmatic smooth scroll
+        // to prevent Android Chrome snapping engine from fighting the scroll animation
+        track.style.scrollSnapType = 'none';
+        track.scrollTo({
+          left: targetLeft,
+          top: 0,
+          behavior: 'smooth'
+        });
+
+        setTimeout(() => {
+          track.style.scrollSnapType = 'x mandatory';
+        }, 350);
+      }
+
+      document.querySelectorAll('[data-thumb]').forEach((x) =>
+        x.setAttribute('aria-current', String(Number(x.dataset.thumb) === i))
+      );
     });
   });
 

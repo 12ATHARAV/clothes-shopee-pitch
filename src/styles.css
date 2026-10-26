@@ -1486,27 +1486,53 @@ p { margin: 0 0 1rem; }
 .pd { padding-block: 2rem 4rem; }
 .pd__crumbs { font-size: 0.9rem; color: var(--muted); margin-bottom: 1.2rem; }
 .pd__crumbs a { color: inherit; }
-.pd__grid { display: grid; gap: 2rem; }
+.pd__grid {
+  display: grid;
+  gap: 2rem;
+  width: 100%;
+  max-width: 100%;
+}
+.pd__grid > * {
+  min-width: 0;
+  max-width: 100%;
+}
 
 /* swipeable product gallery */
+.pd-gallery {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  position: relative;
+  overflow: hidden;
+}
 .pd-gallery__scroll-track {
   display: flex;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
   overflow-x: auto;
+  overflow-y: hidden;
+  overscroll-behavior-x: contain;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
   border-radius: var(--radius);
   background: #efe6d2;
+  box-sizing: border-box;
 }
 .pd-gallery__scroll-track::-webkit-scrollbar { display: none; }
 .pd-gallery__slide {
   flex: 0 0 100%;
   width: 100%;
+  min-width: 100%;
+  max-width: 100%;
   scroll-snap-align: start;
+  scroll-snap-stop: always;
   position: relative;
   aspect-ratio: 4 / 5;
   overflow: hidden;
   cursor: zoom-in;
+  box-sizing: border-box;
 }
 .pd-gallery__slide img {
   position: absolute;
@@ -1517,6 +1543,7 @@ p { margin: 0 0 1rem; }
   object-fit: cover;
   object-position: top;
   transition: transform 0.4s cubic-bezier(0.2, 0.7, 0.2, 1);
+  pointer-events: none;
 }
 .pd-gallery__slide[data-zoom="true"] { cursor: zoom-out; }
 .pd-gallery__slide[data-zoom="true"] img { transform: scale(1.9); }
@@ -1537,6 +1564,7 @@ p { margin: 0 0 1rem; }
   overflow-x: auto;
   scrollbar-width: none;
   margin-top: 0.65rem;
+  padding: 2px 0;
 }
 .pd-gallery__thumbs::-webkit-scrollbar { display: none; }
 .pd-gallery__thumbs button {
@@ -1550,8 +1578,17 @@ p { margin: 0 0 1rem; }
   cursor: pointer;
   overflow: hidden;
   position: relative;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.2s ease, transform 0.15s ease;
 }
-.pd-gallery__thumbs button[aria-current="true"] { border-color: var(--gold); }
+.pd-gallery__thumbs button:hover {
+  transform: translateY(-2px);
+}
+.pd-gallery__thumbs button[aria-current="true"] {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 1px var(--gold);
+}
 .pd-gallery__thumbs img {
   position: absolute;
   inset: 0;
