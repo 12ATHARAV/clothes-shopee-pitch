@@ -31,7 +31,7 @@ function render() {
 
   <div class="wrap story" style="padding-bottom:2rem">
     <p>In ${shop.since}, our grandfather opened a single counter of cotton sarees at ${shop.mapQuery.split(',')[0]}. Three generations later the shop has eight counters — but the habit hasn't changed: show you everything, tell you the honest price, and keep your pick aside until you decide.</p>
-    <p>Most of our customers find us the way their mothers did — by word of mouth from Amravati to Yavatmal. These days the same conversation happens on WhatsApp: send us what you're looking for, we send photos and prices, and your pieces are ready to try when you reach.</p>
+    <p>Most of our customers find us the way their mothers did — by word of mouth across Pune, from Kothrud to Pimpri-Chinchwad. These days the same conversation happens on WhatsApp: send us what you're looking for, we send photos and prices, and your pieces are ready to try when you reach.</p>
     <p><strong style="color:var(--primary)">Free alterations and fitting</strong> for everything we sell. <strong style="color:var(--primary)">Fixed prices</strong> — the tag is the price, festival or not.</p>
   </div>
 

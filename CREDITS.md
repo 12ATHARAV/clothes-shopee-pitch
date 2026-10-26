@@ -45,7 +45,7 @@ Every active image on the website showcases **clothing garments, fabric textures
 | `western-floral-dress.jpg` | Modest A-line floral midi dress with round neckline and elbow sleeves | A-Line Floral Midi Dress | Unsplash / Naris Aly (Royalty-free) |
 | `western-shirt.jpg` | Indigo chambray polka dot button-down shirt | Chambray Polka Shirt | Pexels (Royalty-free) |
 | `western-sweatshirt.jpg` | Everyday cozy warm fleece sweatshirt | Everyday Sweatshirt | Unsplash (Royalty-free) |
-| `store-rack.jpg` | Physical store interior with organized racks of ethnic clothing | Sitabuldi Store Visit Card, About Page Hero | Unsplash (Royalty-free) |
+| `store-rack.jpg` | Physical store interior with organized racks of ethnic clothing | Laxmi Road Store Visit Card, About Page Hero | Unsplash (Royalty-free) |
 | `store-suit.jpg` | Festive mannequin display and store interior rack display | About Page Story, Store Visit alternate view | Unsplash (Royalty-free) |
 
 ---
@@ -63,13 +63,13 @@ The following images were removed from the project:
 
 ## 3. Pitch Checklist: What to Replace for Each Shop
 
-When pitching this website to a new shop owner in Nagpur, Amravati, Akola, Wardha, Yavatmal, or Chandrapur:
+When pitching this website to a new shop owner in Pune, Mumbai, Nagpur, Nashik, or across Maharashtra:
 
 1. **`shop.config.json`**:
-   - `shop.name`: Real shop name (e.g. *Shree Balaji Vastralay*, *Kankariya Sarees*, *Mohanlal & Sons*).
+   - `shop.name`: Real shop name (e.g. *Aura Ethnic Studio*, *Shree Balaji Vastralay*, *Kankariya Sarees*, *Mohanlal & Sons*).
    - `shop.whatsapp`: Active WhatsApp Business number with country code (e.g., `9198XXXXXXXX`).
    - `shop.phone`: Calling number for "Call Store" links.
-   - `shop.address` & `shop.city`: Physical market location (e.g., *Sitabuldi, Itwari, Gandhibagh, Sarafa Bazar, Rajapeth*).
+   - `shop.address` & `shop.city`: Physical market location (e.g., *Laxmi Road, FC Road, Camp, Kothrud, Sitabuldi*).
    - `shop.since`: Year the shop was established (adds instant local credibility).
    - `shop.hours`: Store timings for weekdays and Sundays.
    - `brand.primary`, `brand.gold`, `brand.accent`: Tailored to their sign board / bag colors.
@@ -79,5 +79,5 @@ When pitching this website to a new shop owner in Nagpur, Amravati, Akola, Wardh
 
 2. **`products.json`**:
    - Real price tags and MRPs reflecting their counter stock.
-   - Any specialty weaves they are known for (e.g. Paithani, Karvat-Kathi, Tussar silk, Nagpur cottons, Kanjivaram).
+   - Any specialty weaves they are known for (e.g. Paithani, Karvat-Kathi, Tussar silk, Chanderi, Kanjivaram).
    - Real garment photos taken at the shop counter or on store mannequins against clean backdrops.

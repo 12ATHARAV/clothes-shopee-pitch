@@ -1,19 +1,19 @@
 {
   "shop": {
-    "name": "Shree Balaji Vastralay",
-    "monogram": "SB",
+    "name": "Aura Ethnic Studio",
+    "monogram": "AE",
     "logoImage": null,
-    "tagline": "Sarees, lehengas and festive wear for the whole family",
-    "since": 1987,
-    "city": "Nagpur",
-    "address": "12, Sitabuldi Main Market, Nagpur 440012",
+    "tagline": "Designer sarees, lehengas and festive wear for the whole family",
+    "since": 1994,
+    "city": "Pune",
+    "address": "245, Laxmi Road, Narayan Peth, Pune 411030",
     "phone": "+919823000000",
     "whatsapp": "919823000000",
     "hours": {
       "monSat": "10:30 am – 9:00 pm",
       "sun": "11:00 am – 8:00 pm"
     },
-    "mapQuery": "Sitabuldi Market, Nagpur",
+    "mapQuery": "Laxmi Road, Pune",
     "social": {
       "instagram": "https://instagram.com/",
       "facebook": "https://facebook.com/",
@@ -21,7 +21,7 @@
     },
     "note": "Pay in store or on delivery. No online payment needed."
   },
-  "siteUrl": "https://example-balajivastralay.netlify.app",
+  "siteUrl": "https://auraethnic-pune.netlify.app",
   "brand": {
     "base": "#FCF7EA",
     "ink": "#2A1518",

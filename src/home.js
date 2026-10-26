@@ -127,15 +127,15 @@ function render() {
       <div class="quotes">
         <figure class="quote">
           <blockquote>“I bought my daughter's wedding lehenga here, then my son's sherwani too. Fitting was done in two days — no stress at all.”</blockquote>
-          <figcaption><strong>Sunita Deshmukh</strong> — Amravati</figcaption>
+          <figcaption><strong>Sunita Deshmukh</strong> — Kothrud, Pune</figcaption>
         </figure>
         <figure class="quote">
           <blockquote>“Sent photos of three sarees on WhatsApp at 9 pm, kept my favourite aside, picked it up next morning. This is how shopping should be.”</blockquote>
-          <figcaption><strong>Priya Wankhede</strong> — Nagpur</figcaption>
+          <figcaption><strong>Priya Kulkarni</strong> — FC Road, Pune</figcaption>
         </figure>
         <figure class="quote">
-          <blockquote>“Same shop my mother bought from. Now I buy kurtis for college and gifts for every Raksha Bandhan.”</blockquote>
-          <figcaption><strong>Anjali Kale</strong> — Yavatmal</figcaption>
+          <blockquote>“Same shop my mother bought from on Laxmi Road. Now I buy kurtis for college and gifts for every Raksha Bandhan.”</blockquote>
+          <figcaption><strong>Anjali Joshi</strong> — Aundh, Pune</figcaption>
         </figure>
       </div>
     </div>

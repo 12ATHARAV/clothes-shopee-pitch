@@ -84,7 +84,7 @@
       "sizes": ["Free size"],
       "occasions": ["Wedding", "Festive"],
       "bestseller": true,
-      "desc": "A rich art-silk saree with a woven zari border, the way Nagpur brides like it. Comes with an unstitched blouse piece. Fall and pico can be done in store."
+      "desc": "A rich art-silk saree with a woven zari border, the way Pune brides like it. Comes with an unstitched blouse piece. Fall and pico can be done in store."
     },
     {
       "id": "karvat-kathi-handloom-saree",
@@ -126,7 +126,7 @@
       "colors": [{ "n": "Red", "h": "#B81D24" }, { "n": "Mustard", "h": "#C9922A" }],
       "sizes": ["Free size"],
       "occasions": ["Casual", "Festive"],
-      "desc": "Everyday cotton from the Yavatmal belt — breathable, smart, and ready for a full day at work or a quick temple visit."
+      "desc": "Traditional handloom cotton drape — breathable, smart, and ready for a full day at work or a quick temple visit."
     },
     {
       "id": "bridal-lehenga-deep-red",
@@ -216,7 +216,7 @@
       "sizes": ["S", "M", "L", "XL", "XXL"],
       "occasions": ["Casual", "Festive"],
       "new": true,
-      "desc": "Breathable cotton kurta with white palazzo. Made for Vidarbha summers and long train journeys to Amravati."
+      "desc": "Breathable cotton kurta with white palazzo. Made for pleasant Pune afternoons and everyday college or office wear."
     },
     {
       "id": "mens-modern-kurta-slate",
