@@ -31,9 +31,9 @@ function render() {
   main.innerHTML = `
   <!-- hero -->
   ${config.hero.slides && config.hero.slides.length ? renderHeroCarousel(config.hero.slides) : `
-  <section class="hero" aria-label="Welcome">
-    <div class="hero__grid">
-      <div class="hero__text wrap" style="padding-left:clamp(1rem,4vw,2rem)">
+  <section class="hero" id="hero-showcase" aria-label="Welcome">
+    <div class="hero__grid wrap">
+      <div class="hero__text">
         <span class="hero__offer">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.4 6.9L21 11l-6.6 2.1L12 20l-2.4-6.9L3 11l6.6-2.1z"/></svg>
           ${config.hero.offer}
@@ -46,8 +46,9 @@ function render() {
         </div>
       </div>
       <div class="hero__imgwrap">
-        <img src="${imgUrl(config.hero.image)}" alt="Red designer bridal tissue silk saree with rich silver and gold zari embroidery" width="900" height="1200" fetchpriority="high" decoding="async">
-        <div class="hero__fade" aria-hidden="true"></div>
+        <div class="hero__img-frame">
+          <img src="${imgUrl(config.hero.image)}" alt="Red designer bridal tissue silk saree with rich silver and gold zari embroidery" width="800" height="1200" fetchpriority="high" decoding="async">
+        </div>
       </div>
     </div>
   </section>`}
