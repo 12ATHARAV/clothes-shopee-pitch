@@ -44,8 +44,8 @@
   "hero": {
     "image": "hero/hero-1-red-saree.webp",
     "offer": "Festive Sale: up to 40% off",
-    "autoplayInterval": 1000,
-    "autoplayDelay": 1000,
+    "autoplayInterval": 1500,
+    "autoplayDelay": 1500,
     "transitionDuration": 400,
     "slides": [
       {
@@ -111,18 +111,6 @@
         "primaryCta": {
           "text": "Shop now",
           "link": "/category.html?cat=kurtis"
-        }
-      },
-      {
-        "id": "kids-celebration-wear",
-        "offer": "Kids Celebration Wear",
-        "headline": "Celebration Wear for Little Ones",
-        "subtext": "Comfortable, irritation-free pastel kurtas, Nehru jackets and party frocks for children.",
-        "image": "hero/hero-6-kids-festive.webp",
-        "alt": "Young boy smiling in vibrant festive ethnic kurta celebration wear",
-        "primaryCta": {
-          "text": "Shop now",
-          "link": "/category.html?cat=kids"
         }
       }
     ]
