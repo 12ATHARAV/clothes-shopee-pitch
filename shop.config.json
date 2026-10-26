@@ -1,0 +1,48 @@
+{
+  "shop": {
+    "name": "Shree Balaji Vastralay",
+    "monogram": "SB",
+    "logoImage": null,
+    "tagline": "Sarees, lehengas and festive wear for the whole family",
+    "since": 1987,
+    "city": "Nagpur",
+    "address": "12, Sitabuldi Main Market, Nagpur 440012",
+    "phone": "+919823000000",
+    "whatsapp": "919823000000",
+    "hours": {
+      "monSat": "10:30 am – 9:00 pm",
+      "sun": "11:00 am – 8:00 pm"
+    },
+    "mapQuery": "Sitabuldi Market, Nagpur",
+    "social": {
+      "instagram": "https://instagram.com/",
+      "facebook": "https://facebook.com/",
+      "youtube": "https://youtube.com/"
+    },
+    "note": "Pay in store or on delivery. No online payment needed."
+  },
+  "siteUrl": "https://example-balajivastralay.netlify.app",
+  "brand": {
+    "base": "#FCF7EA",
+    "ink": "#2A1518",
+    "primary": "#7D1128",
+    "gold": "#B98A2F",
+    "accent": "#C0245E"
+  },
+  "sale": {
+    "enabled": true,
+    "barText": "Diwali Sale: up to 40% off sarees, lehengas and kurta-sets",
+    "endDate": "2026-11-18T21:00:00+05:30",
+    "modal": {
+      "enabled": true,
+      "title": "Diwali Sale is live",
+      "text": "Up to 40% off sarees, lehengas and kurta-sets till 18 November. Reserve yours on WhatsApp.",
+      "cta": "See the offers",
+      "ctaLink": "/category.html?cat=sarees"
+    }
+  },
+  "hero": {
+    "image": "hero-red-saree.jpg",
+    "offer": "Diwali Sale: up to 40% off"
+  }
+}
