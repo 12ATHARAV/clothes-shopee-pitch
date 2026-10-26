@@ -548,6 +548,165 @@ p { margin: 0 0 1rem; }
   color: rgba(255, 255, 255, 0.85);
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
+
+/* ---- hero carousel enhancements ---- */
+.hero--carousel {
+  position: relative;
+  overflow: hidden;
+  outline: none;
+}
+.hero__viewport {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  touch-action: pan-y;
+}
+.hero__track {
+  display: flex;
+  width: 100%;
+  will-change: transform;
+}
+.hero__slide {
+  flex: 0 0 100%;
+  width: 100%;
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Desktop navigation arrows */
+.hero__arrow {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .hero__arrow {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background: rgba(252, 247, 234, 0.92);
+    color: var(--primary);
+    border: 1.5px solid var(--gold);
+    box-shadow: 0 4px 16px rgba(42, 21, 24, 0.16);
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 20;
+    transition: background 0.2s, color 0.2s, transform 0.2s, box-shadow 0.2s;
+  }
+  .hero__arrow:hover {
+    background: var(--primary);
+    color: #fff;
+    transform: translateY(-50%) scale(1.06);
+    box-shadow: 0 6px 20px rgba(125, 17, 40, 0.25);
+  }
+  .hero__arrow:active {
+    transform: translateY(-50%) scale(0.96);
+  }
+  .hero__arrow--prev {
+    left: clamp(0.75rem, 2vw, 1.5rem);
+  }
+  .hero__arrow--next {
+    right: clamp(0.75rem, 2vw, 1.5rem);
+  }
+}
+
+/* Indicators & pause button container */
+.hero__controls-wrap {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+  z-index: 25;
+}
+@media (min-width: 900px) {
+  .hero__controls-wrap {
+    justify-content: flex-start;
+    padding-left: clamp(1rem, 4vw, 2rem);
+    bottom: 1.4rem;
+  }
+}
+
+.hero__controls {
+  pointer-events: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.15rem;
+  background: rgba(42, 21, 24, 0.65);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(185, 138, 47, 0.35);
+  border-radius: 999px;
+  padding: 2px 6px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+}
+
+.hero__dots {
+  display: flex;
+  align-items: center;
+}
+
+.hero__dot {
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  outline: none;
+}
+
+.hero__dot-pill {
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.55);
+  transition: width 0.3s cubic-bezier(0.25, 1, 0.5, 1), background 0.3s ease;
+}
+
+.hero__dot:hover .hero__dot-pill {
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.hero__dot--active .hero__dot-pill {
+  width: 22px;
+  background: var(--gold);
+}
+
+.hero__toggle-btn {
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  color: rgba(255, 255, 255, 0.85);
+  cursor: pointer;
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  margin-left: 2px;
+  transition: color 0.2s ease;
+  outline: none;
+}
+.hero__toggle-btn:hover {
+  color: var(--gold);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero__track {
+    transition: none !important;
+  }
+}
 .hero__credit a { color: inherit; }
 
 @keyframes hero-rise {

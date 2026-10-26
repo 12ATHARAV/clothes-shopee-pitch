@@ -10,7 +10,13 @@ Every active image on the website showcases **clothing garments, fabric textures
 
 | Filename | Description | Usage on Site | Source / License |
 | :--- | :--- | :--- | :--- |
-| `hero-red-saree.jpg` | Red designer bridal tissue silk saree with rich silver and gold zari embroidery | Home Hero Banner, Social Preview | Wikimedia Commons (CC-BY-SA 4.0 / Royalty-free) |
+| `hero/hero-1-red-saree.webp` | Red designer bridal tissue silk saree with rich silver and gold zari embroidery | Hero Carousel Slide 1 (Sarees) | Unsplash / Rejaul Karim (Royalty-free) |
+| `hero/hero-2-green-saree.webp` | Royal green pure silk Kanjivaram saree with woven gold zari border | Hero Carousel Slide 2 (Sarees) | Unsplash / Sabesh Photography LTD (Royalty-free) |
+| `hero/hero-3-bridal-lehenga.webp` | Red and gold embroidered royal bridal lehenga with heavy zardozi detail | Hero Carousel Slide 3 (Lehengas) | Unsplash / Picture Poet (Royalty-free) |
+| `hero/hero-4-mens-sherwani.webp` | Young groom in contemporary cream jacquard wedding sherwani with subtle embroidery | Hero Carousel Slide 4 (Men's Ethnic) | Unsplash / Mohammad Al Jannat Rakin (Royalty-free) |
+| `hero/hero-5-festive-suit.webp` | Festive floral embroidered Indian salwar suit with matching dupatta | Hero Carousel Slide 5 (Kurtis & Suits) | Unsplash / Naseebo (Royalty-free) |
+| `hero/hero-6-kids-festive.webp` | Young boy smiling in vibrant festive ethnic kurta celebration wear | Hero Carousel Slide 6 (Kids) | Unsplash / Saad Ali (Royalty-free) |
+| `hero-red-saree.jpg` | Red designer bridal tissue silk saree with rich silver and gold zari embroidery | Fallback Hero Banner, Social Preview | Wikimedia Commons (CC-BY-SA 4.0 / Royalty-free) |
 | `saree-red-banarasi.jpg` | Traditional crimson red Banarasi silk saree with woven gold zari border | Sarees Category Tile, Crimson Banarasi Silk Saree, Lookbook Strip | Unsplash / Rejaul Karim (Royalty-free) |
 | `saree-red-kanjivaram.jpg` | Ruby red pure silk Kanjivaram saree with gold temple border | Kanjivaram Pure Silk Saree — Ruby Red | Unsplash / Shiv Narayan Das (Royalty-free) |
 | `saree-maroon-chanderi.jpg` | Deep maroon Chanderi tissue silk saree with gold resham buta motifs | Chanderi Tissue Saree — Deep Maroon | Unsplash / Uday Ahir (Royalty-free) |

@@ -42,7 +42,87 @@
     }
   },
   "hero": {
-    "image": "hero-red-saree.jpg",
-    "offer": "Diwali Sale: up to 40% off"
+    "image": "hero/hero-1-red-saree.webp",
+    "offer": "Festive Sale: up to 40% off",
+    "autoplayInterval": 4500,
+    "slides": [
+      {
+        "id": "sarees-red-banarasi",
+        "offer": "Festive Sale: up to 40% off",
+        "headline": "Dress the whole family for the festive season",
+        "subtext": "Sarees, lehengas, kurta-sets and more — try them in our Laxmi Road shop, or order on WhatsApp and we keep your pick aside.",
+        "image": "hero/hero-1-red-saree.webp",
+        "alt": "Red designer bridal tissue silk saree with rich silver and gold zari embroidery",
+        "primaryCta": {
+          "text": "Browse collections",
+          "link": "#categories"
+        },
+        "secondaryCta": {
+          "text": "Order on WhatsApp",
+          "action": "whatsapp",
+          "msg": "Hi! I want to shop with you."
+        }
+      },
+      {
+        "id": "sarees-royal-green",
+        "offer": "Pure Silk Collection",
+        "headline": "Heritage Kanjivaram & Paithani Silk Drapes",
+        "subtext": "Pure handloom silk with timeless temple borders, woven for weddings and festive poojas.",
+        "image": "hero/hero-2-green-saree.webp",
+        "alt": "Royal green pure silk Kanjivaram saree with woven gold zari border",
+        "primaryCta": {
+          "text": "Shop now",
+          "link": "/category.html?cat=sarees"
+        }
+      },
+      {
+        "id": "lehengas-royal-bridal",
+        "offer": "Bridal Couture",
+        "headline": "Royal Bridal Lehengas & Wedding Couture",
+        "subtext": "Handcrafted zardozi, rich velvets and dual dupattas tailored to perfection for your special day.",
+        "image": "hero/hero-3-bridal-lehenga.webp",
+        "alt": "Red and gold embroidered royal bridal lehenga with heavy zardozi detail",
+        "primaryCta": {
+          "text": "Shop now",
+          "link": "/category.html?cat=lehengas"
+        }
+      },
+      {
+        "id": "mens-sherwani-studio",
+        "offer": "Men's Wedding Studio",
+        "headline": "Contemporary Sherwanis & Tailored Kurta Sets",
+        "subtext": "Youthful silhouettes, premium jacquard fabrics and custom fittings for the modern groom.",
+        "image": "hero/hero-4-mens-sherwani.webp",
+        "alt": "Young groom in contemporary cream jacquard wedding sherwani with subtle embroidery",
+        "primaryCta": {
+          "text": "Shop now",
+          "link": "/category.html?cat=mens"
+        }
+      },
+      {
+        "id": "kurtis-festive-suits",
+        "offer": "Festive Suits & Anarkalis",
+        "headline": "Festive Anarkalis & Designer Kurta Sets",
+        "subtext": "Flowing chanderi, georgette and silk suits designed for Diwali parties and family celebrations.",
+        "image": "hero/hero-5-festive-suit.webp",
+        "alt": "Festive floral embroidered Indian salwar suit with matching dupatta",
+        "primaryCta": {
+          "text": "Shop now",
+          "link": "/category.html?cat=kurtis"
+        }
+      },
+      {
+        "id": "kids-celebration-wear",
+        "offer": "Kids Celebration Wear",
+        "headline": "Celebration Wear for Little Ones",
+        "subtext": "Comfortable, irritation-free pastel kurtas, Nehru jackets and party frocks for children.",
+        "image": "hero/hero-6-kids-festive.webp",
+        "alt": "Young boy smiling in vibrant festive ethnic kurta celebration wear",
+        "primaryCta": {
+          "text": "Shop now",
+          "link": "/category.html?cat=kids"
+        }
+      }
+    ]
   }
 }

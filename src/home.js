@@ -1,5 +1,6 @@
 import { config, data, imgUrl, waLink, telLink, mapLink, productCard, initPage, t, money, offPct } from './store.js';
 import { applyStatic } from './i18n.js';
+import { renderHeroCarousel, initHeroCarousel } from './hero-carousel.js';
 
 const byId = Object.fromEntries(data.products.map((p) => [p.id, p]));
 
@@ -29,6 +30,7 @@ function render() {
 
   main.innerHTML = `
   <!-- hero -->
+  ${config.hero.slides && config.hero.slides.length ? renderHeroCarousel(config.hero.slides) : `
   <section class="hero" aria-label="Welcome">
     <div class="hero__grid">
       <div class="hero__text wrap" style="padding-left:clamp(1rem,4vw,2rem)">
@@ -48,7 +50,7 @@ function render() {
         <div class="hero__fade" aria-hidden="true"></div>
       </div>
     </div>
-  </section>
+  </section>`}
 
   <div class="zari" role="presentation"></div>
 
@@ -209,6 +211,10 @@ function render() {
     priceRange: '₹₹',
   })}
   </script>`;
+
+  if (config.hero.slides && config.hero.slides.length) {
+    initHeroCarousel();
+  }
 }
 
 initPage();
