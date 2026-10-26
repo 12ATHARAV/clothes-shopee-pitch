@@ -94,7 +94,10 @@ export function initHeroCarousel() {
   let isPausedByUser = false;
   let isHovered = false;
   let isTouching = false;
-  const interval = config.hero.autoplayInterval || 4500;
+  const slideDelay = config.hero.autoplayDelay !== undefined
+    ? config.hero.autoplayDelay
+    : (config.hero.autoplayInterval !== undefined ? config.hero.autoplayInterval : 500);
+  const transitionMs = config.hero.transitionDuration || 400;
   const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   // Set initial position
@@ -113,7 +116,7 @@ export function initHeroCarousel() {
     if (isTransitioning && animate) return;
     if (animate && !prefersReduced) {
       isTransitioning = true;
-      track.style.transition = 'transform 650ms cubic-bezier(0.25, 1, 0.5, 1)';
+      track.style.transition = `transform ${transitionMs}ms cubic-bezier(0.25, 1, 0.5, 1)`;
     } else {
       track.style.transition = 'none';
     }
@@ -128,6 +131,7 @@ export function initHeroCarousel() {
 
     if (!animate || prefersReduced) {
       isTransitioning = false;
+      scheduleNext();
     }
   }
 
@@ -155,20 +159,25 @@ export function initHeroCarousel() {
       track.style.transform = `translate3d(-${currentIdx * 100}%, 0, 0)`;
       track.offsetHeight; // force reflow
     }
+    scheduleNext();
   });
 
   // Autoplay management
-  function startAutoplay() {
+  function scheduleNext() {
     stopAutoplay();
     if (prefersReduced || isPausedByUser || isHovered || isTouching || document.hidden) return;
-    autoplayTimer = setInterval(() => {
+    autoplayTimer = setTimeout(() => {
       next();
-    }, interval);
+    }, slideDelay);
+  }
+
+  function startAutoplay() {
+    scheduleNext();
   }
 
   function stopAutoplay() {
     if (autoplayTimer) {
-      clearInterval(autoplayTimer);
+      clearTimeout(autoplayTimer);
       autoplayTimer = null;
     }
   }
